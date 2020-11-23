@@ -18,7 +18,7 @@ export default function Home() {
       <ul>
         {foods_data.map((food) => {
           return (
-            <li>
+            <li key={food.id.toString()}>
               <FoodLink food={food} />
             </li>
           );

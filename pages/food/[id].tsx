@@ -4,7 +4,7 @@ import foods_data from '../../database/foods';
 
 const renderFoodName = (id) => {
   for(const target of foods_data) {
-    if (target.id == id )
+    if (target.id.toString() === id )
       return (
         target.title
       );

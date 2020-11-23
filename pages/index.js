@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Vercel from '../public/vercel.svg'
 import FoodLink from '../components/food_link';
 import foods_data from '../database/foods';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -23,6 +24,10 @@ export default function Home() {
           );
         })}
       </ul>
+
+      <Link href="/trimming">
+        <a>画像トリミング</a>
+      </Link>
     </div>
   )
 }

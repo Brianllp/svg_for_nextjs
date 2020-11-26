@@ -1,6 +1,7 @@
 import ReactCrop from 'react-image-crop';
 import 'react-image-crop/dist/ReactCrop.css';
 import {useState, useRef, useEffect, useCallback} from 'react';
+import { Button } from '@material-ui/core';
 
 // We resize the canvas down when saving on retina devices otherwise the image
 // will be double or triple the preview size.
@@ -122,15 +123,16 @@ export default function Trimming() {
         />
       </div>
 
-      <button
-        type="button"
+      <Button
+        variant="outlined"
+        color="primary"
         disabled={!completedCrop?.width || !completedCrop?.height}
         onClick={() =>
           generateDownload(previewCanvasRef.current, completedCrop)
         }
       >
-        Download cropped image
-      </button>
+        Download Here
+      </Button>
     </div>
   )
 }

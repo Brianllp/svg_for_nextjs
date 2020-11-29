@@ -28,6 +28,10 @@ export default function Home() {
       <Link href="/trimming">
         <a>画像トリミング</a>
       </Link>
+
+      <Link href="/count_app_with_redux">
+        <a>カウントアプリ with redux</a>
+      </Link>
     </div>
   )
 }

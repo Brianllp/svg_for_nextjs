@@ -32,6 +32,10 @@ export default function Home() {
       <Link href="/count_app_with_redux">
         <a>カウントアプリ with redux</a>
       </Link>
+
+      <Link href="/user_with_api">
+        <a>apiでdata持ってきたやつを表示する</a>
+      </Link>
     </div>
   )
 }
